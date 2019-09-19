@@ -1,0 +1,34 @@
+nodes (n) = 200 * 200
+edges (m) <= 200 * 200 * 4
+
+m = O(n)
+
+format:
+operation: naive, heap, fib heap
+
+insert: O(1), O(log n), O(1)
+deleteMin: O(n), O(log n), O(log n)
+update: O(1), O(log n), O(1)
+
+# of operations:
+insert: n
+deleteMin: n
+update: m
+
+
+complexity:
+insert: O(n), O(n log n), O(n)
+deleteMin: O(n^2), O(n log n), O(n log n)
+update: O(m), O(m log n), O(m)
+
+total: O(n^2), (m + n) log n, m + n log n 
+
+estimated # of operations:
+naive: 1600000000
+heap:  2119326.9466192145 (0.001324579341637009)
+fHeap: 583865.389323843 (0.00036491586832740184)
+
+estimated time:
+naive: 453 seconds
+heap: 0.6000344417615651 seconds
+fHeap: 0.16530688835231303 seconds
